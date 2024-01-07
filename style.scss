@@ -1,0 +1,16 @@
+$corB: hsl(183, 100%, 15%);
+$corA:  hsl(172, 67%, 45%);
+$corC: hsl(186, 14%, 43%);
+$corD: hsl(0, 0%, 100%);
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: $corA;
+}
+#texto{
+    text-align: right;
+}

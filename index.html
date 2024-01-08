@@ -12,30 +12,50 @@
 <body>
 <section>
   
-    <form action="">
-      <label>Bill</label>
-      <label for="texto" class="icone"><img src="images/icon-dollar.svg" alt=""></label>
-      <input type="text" id="texto" placeholder="0">
-    </form>
-  
-    <form action="">
-      <label>Select Tip %</label>
-      <input type="button" value="5%">
-      <input type="button" value="10%">
-      <input type="button" value="15%">
-      <input type="button" value="50%">
-      <input type="button" value="25%">
-      <input type="text" placeholder="Custom">Custom</input>
-    </form>
-  
-    Number of People
-  
-    <article>
-      Tip Amount
-      / person
-      Total
-      / person
-      Reset
+    <main>
+      <form class="form1" action="">
+        <label>Bill</label>
+        <br>
+        <article class="button">
+          <label for="texto" class="icone"><img src="images/icon-dollar.svg" alt=""></label>
+          <input type="text" id="texto" placeholder="0">
+        </article>
+      </form>
+
+      <form action="" class="form2">
+        <label>Select Tip %</label>
+        <br>
+        <div class="grid">
+          <input class="inputs" type="button" value="5%">
+          <input class="inputs"  type="button" value="10%">
+          <input class="inputs" type="button" value="15%">
+          <input class="inputs"  type="button" value="50%">
+          <input class="inputs"  type="button" value="25%">
+          <input class="btn-tex" type="text" placeholder="Custom">
+        </div>
+      </form>
+
+      <form action="" class="form3">
+        <label>Number of People</label>
+        <br>
+        <article class="button2">
+          <label class="icone2" > <img src="images/icon-person.svg" alt=""></label>
+          <input type="text" class="texto2" placeholder="0">
+        </article>
+      </form>
+    </main>
+    <article class="art2">
+      <div class=" grid1">
+          <h3 class="pri" id="one">Tip Amount</h3>
+          <p class="pri" id="two">/ person</p>
+          <h2 class="pri" id="thre">$0.00</h2>
+      
+          <h3 class="sec" id="four">Total</h3>
+          <p class="sec" id="five">/ person</p>
+          <h2 class="sec" id="six">$0.00</h2>
+      </div>
+
+      <button>Reset</button>
   
     </article>
 </section>

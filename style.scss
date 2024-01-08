@@ -2,15 +2,192 @@ $corB: hsl(183, 100%, 15%);
 $corA:  hsl(172, 67%, 45%);
 $corC: hsl(186, 14%, 43%);
 $corD: hsl(0, 0%, 100%);
-
+$corE: hsl(185, 41%, 84%);
+$corF: hsl(189, 41%, 97%);
+$corG: hsl(183, 100%, 15%);
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap');
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Space Mono', monospace;
 }
 body{
-    background-color: $corA;
+    background-color: $corE;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+section{
+    background-color: $corD;
+    border-radius: 1rem;
+    max-width: 700px;
+    max-height: 400px;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+main{
+    padding: 5% 5% 5% 5%;
+}
+label{
+    font-size: 0.7rem;
+    color: $corC;
+}
+// formulario 1 Bill
+.form1 > article > label > img{
+    max-width: 12px;
+    max-height: 12px;
+}
+.button{
+    background-color: $corF;
+    max-width: 300px;
+    border-radius: 0.2rem;
+    padding: 3px;
+}
+.icone{
+    margin-left:10px;
 }
 #texto{
     text-align: right;
+    color: $corA;
+    border: none;
+    background-color: $corF;
+    margin-left: 10%;
+}
+#texto:focus{
+    outline: none;
+}
+#texto::placeholder{
+    color:$corA;
+}
+// formulario 2 select tip
+.form2{
+    margin:11% 0% 11% 0%;
+}
+.grid{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 70px 70px 70px;
+    grid-template-rows: 30px 30px;
+    margin-top: 4%;
+}
+.inputs{
+    border: none;
+    border-radius: 0.2rem;
+    background-color: $corG;
+    color: $corD;
+}
+.btn-tex{
+    text-align: center;
+    background-color: $corF;
+    border: none;
+    border-radius: 0.2rem;
+    color: $corA;
+}
+.btn-tex:focus{
+    outline: none;
+}
+.btn-tex::placeholder{
+    color:$corG;
+}
+//formulario 3 numb of people
+.form3 > article > label > img{
+    max-width: 12px;
+    max-height: 12px;
+}
+.button2{
+    background-color: $corF;
+    max-width: 300px;
+    border-radius: 0.2rem;
+    padding: 3px;
+}
+.icone2{
+    margin-left:10px;
+}
+.texto2{
+    text-align: right;
+    color: $corA;
+    border: none;
+    background-color: $corF;
+    margin-left: 10%;
+}
+.texto2:focus{
+    outline: none;
+}
+.texto2::placeholder{
+    color:$corA;
+}
+
+// resultado
+.art2{
+    background-color: $corG;
+    width: 300px;
+    height: 280px;
+    margin-right: 3%;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.grid1{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100px 100px;
+    
+}
+.pri{
+    grid-row: 1;
+}
+.sec{
+    grid-row: 2;
+}
+#one{
+    color: $corD;
+    font-size: 0.7rem;
+    margin: 20% 0% 0% 10%;
+    grid-column: 1;
+}
+#two{
+    color: $corC;
+    font-size: 0.6rem;
+    margin: 35% 0% 5% 10%;
+    grid-column: 1;
+}
+#thre{
+    color: $corA;
+    grid-column: 2;
+    margin: 15% 0% 0% 10%;
+}
+#four{
+    color: $corD;
+    font-size: 0.7rem;
+    margin: 5% 0% 0% 10%;
+    grid-column: 1;
+}
+#five{
+    color: $corC;
+    font-size: 0.6rem;
+    margin: 20% 0% 5% 10%;
+    grid-column: 1;
+}
+#six{
+    color: $corA;
+    grid-column: 2;
+    margin: 5% 0% 0% 10%;
+}
+
+button{
+    background-color: $corC;
+    border: none;
+    border-radius: 0.2rem;
+    padding: 5px 80px 5px 80px;
+    margin: auto;
 }

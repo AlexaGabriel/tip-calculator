@@ -1,13 +1,212 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap");
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "Space Mono", monospace;
 }
 
 body {
-  background-color: hsl(172, 67%, 45%);
+  background-color: hsl(185, 41%, 84%);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+section {
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 1rem;
+  max-width: 700px;
+  max-height: 400px;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+}
+
+main {
+  padding: 5% 5% 5% 5%;
+}
+
+label {
+  font-size: 0.7rem;
+  color: hsl(186, 14%, 43%);
+}
+
+.form1 > article > label > img {
+  max-width: 12px;
+  max-height: 12px;
+}
+
+.button {
+  background-color: hsl(189, 41%, 97%);
+  max-width: 300px;
+  border-radius: 0.2rem;
+  padding: 3px;
+}
+
+.icone {
+  margin-left: 10px;
 }
 
 #texto {
   text-align: right;
+  color: hsl(172, 67%, 45%);
+  border: none;
+  background-color: hsl(189, 41%, 97%);
+  margin-left: 10%;
+}
+
+#texto:focus {
+  outline: none;
+}
+
+#texto::placeholder {
+  color: hsl(172, 67%, 45%);
+}
+
+.form2 {
+  margin: 11% 0% 11% 0%;
+}
+
+.grid {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 70px 70px 70px;
+  grid-template-rows: 30px 30px;
+  margin-top: 4%;
+}
+
+.inputs {
+  border: none;
+  border-radius: 0.2rem;
+  background-color: hsl(183, 100%, 15%);
+  color: hsl(0, 0%, 100%);
+}
+
+.btn-tex {
+  text-align: center;
+  background-color: hsl(189, 41%, 97%);
+  border: none;
+  border-radius: 0.2rem;
+  color: hsl(172, 67%, 45%);
+}
+
+.btn-tex:focus {
+  outline: none;
+}
+
+.btn-tex::placeholder {
+  color: hsl(183, 100%, 15%);
+}
+
+.form3 > article > label > img {
+  max-width: 12px;
+  max-height: 12px;
+}
+
+.button2 {
+  background-color: hsl(189, 41%, 97%);
+  max-width: 300px;
+  border-radius: 0.2rem;
+  padding: 3px;
+}
+
+.icone2 {
+  margin-left: 10px;
+}
+
+.texto2 {
+  text-align: right;
+  color: hsl(172, 67%, 45%);
+  border: none;
+  background-color: hsl(189, 41%, 97%);
+  margin-left: 10%;
+}
+
+.texto2:focus {
+  outline: none;
+}
+
+.texto2::placeholder {
+  color: hsl(172, 67%, 45%);
+}
+
+.art2 {
+  background-color: hsl(183, 100%, 15%);
+  width: 300px;
+  height: 280px;
+  margin-right: 3%;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.grid1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 100px 100px;
+}
+
+.pri {
+  grid-row: 1;
+}
+
+.sec {
+  grid-row: 2;
+}
+
+#one {
+  color: hsl(0, 0%, 100%);
+  font-size: 0.7rem;
+  margin: 20% 0% 0% 10%;
+  grid-column: 1;
+}
+
+#two {
+  color: hsl(186, 14%, 43%);
+  font-size: 0.6rem;
+  margin: 35% 0% 5% 10%;
+  grid-column: 1;
+}
+
+#thre {
+  color: hsl(172, 67%, 45%);
+  grid-column: 2;
+  margin: 15% 0% 0% 10%;
+}
+
+#four {
+  color: hsl(0, 0%, 100%);
+  font-size: 0.7rem;
+  margin: 5% 0% 0% 10%;
+  grid-column: 1;
+}
+
+#five {
+  color: hsl(186, 14%, 43%);
+  font-size: 0.6rem;
+  margin: 20% 0% 5% 10%;
+  grid-column: 1;
+}
+
+#six {
+  color: hsl(172, 67%, 45%);
+  grid-column: 2;
+  margin: 5% 0% 0% 10%;
+}
+
+button {
+  background-color: hsl(186, 14%, 43%);
+  border: none;
+  border-radius: 0.2rem;
+  padding: 5px 80px 5px 80px;
+  margin: auto;
 }/*# sourceMappingURL=style.css.map */

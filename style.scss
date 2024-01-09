@@ -85,6 +85,10 @@ label{
     background-color: $corG;
     color: $corD;
 }
+.inputs:active{
+    background-color: $corA;
+    color:$corG
+}
 .btn-tex{
     text-align: center;
     background-color: $corF;
@@ -190,4 +194,7 @@ button{
     border-radius: 0.2rem;
     padding: 5px 80px 5px 80px;
     margin: auto;
+}
+button:active{
+    background-color: $corA;
 }

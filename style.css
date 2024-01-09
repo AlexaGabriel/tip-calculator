@@ -90,6 +90,11 @@ label {
   color: hsl(0, 0%, 100%);
 }
 
+.inputs:active {
+  background-color: hsl(172, 67%, 45%);
+  color: hsl(183, 100%, 15%);
+}
+
 .btn-tex {
   text-align: center;
   background-color: hsl(189, 41%, 97%);
@@ -209,4 +214,8 @@ button {
   border-radius: 0.2rem;
   padding: 5px 80px 5px 80px;
   margin: auto;
+}
+
+button:active {
+  background-color: hsl(172, 67%, 45%);
 }/*# sourceMappingURL=style.css.map */

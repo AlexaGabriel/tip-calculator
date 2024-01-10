@@ -26,7 +26,7 @@ section{
     background-color: $corD;
     border-radius: 1rem;
     max-width: 700px;
-    max-height: 400px;
+    max-height: 800px;
     display: flex;
     align-content: center;
     align-items: center;
@@ -35,11 +35,12 @@ section{
     justify-content: space-around;
 }
 main{
-    padding: 5% 5% 5% 5%;
+    padding: 6% 6% 6% 6%;
 }
 label{
     font-size: 0.7rem;
     color: $corC;
+    margin-bottom: 0px;
 }
 // formulario 1 Bill
 .form1 > article > label > img{
@@ -51,6 +52,19 @@ label{
     max-width: 300px;
     border-radius: 0.2rem;
     padding: 3px;
+}
+.button:focus-within{
+    border: 2px solid $corA;
+    
+}
+.button.erro{
+    border: 2px solid red;
+}
+.ermen{
+    font-size: 0.6rem;
+    color: red;
+    margin-bottom: 0px;
+    display: inline;
 }
 .icone{
     margin-left:10px;
@@ -113,6 +127,18 @@ label{
     border-radius: 0.2rem;
     padding: 3px;
 }
+.button2:focus-within{
+    border: 2px solid $corA;
+}
+.button2.error{
+    border: 2px solid red;
+}
+.ermen1{
+    font-size: 0.6rem;
+    color: red;
+    margin-bottom: 0px;
+    display: inline;
+}
 .icone2{
     margin-left:10px;
 }
@@ -134,7 +160,7 @@ label{
 .art2{
     background-color: $corG;
     width: 300px;
-    height: 280px;
+    height: 260px;
     margin-right: 3%;
     border-radius: 0.5rem;
     display: flex;
@@ -144,7 +170,7 @@ label{
 .grid1{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 100px 100px;
+    grid-template-rows: 80px 130px;
     
 }
 .pri{
@@ -198,3 +224,32 @@ button{
 button:active{
     background-color: $corA;
 }
+@media screen and (max-width: 767px){
+    section{
+        width: 100vw;
+        height: 80vh;
+        flex-direction: column;
+        justify-content: center;
+    }
+    main{
+        padding: 5% 0% 0% 0%;
+    }
+    body{
+        align-items: flex-end;
+    }
+    .art2{
+        max-width: 250px;
+        max-height: 250px;
+        justify-content: center;
+        margin-top: 3%;
+    }
+    .grid1{
+        grid-template-rows: 70px 60px;
+    }
+}
+    .form2{
+        margin: 5% 0% 5% 0%;
+    }
+    label{
+        padding-top: 25px;
+    }
